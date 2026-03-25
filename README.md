@@ -1,25 +1,32 @@
-# 🏥 AI-Powered Clinic Appointment Automation
+# 🏥 AI-Powered Clinic Intelligence System
 
-> An automated appointment management system built using **n8n**, designed to streamline clinic workflows, reduce manual data entry, and improve patient scheduling experience.
+> An advanced healthcare automation system built on **n8n**, utilizing **AI Agents (Gemini)** to manage the entire patient lifecycle via WhatsApp and Google Sheets.
 
-## 🚀 The Workflow Logic
-This automation handles the entire booking lifecycle:
-1. **Patient Interaction:** Captures data via [Typeform/Google Forms/WhatsApp].
-2. **AI Processing:** Uses an LLM node to extract intent and schedule details.
-3. **Database Integration:** Automatically updates [Google Sheets/Airtable/Notion] with patient info.
-4. **Instant Notifications:** Sends confirmation via Email/WhatsApp to both doctor and patient.
+## ✨ Key System Capabilities (As seen in Workflow)
+
+### 🤖 1. Autonomous Appointment Management
+* **Dynamic Scheduling:** Patients can book, reschedule, or cancel appointments directly via WhatsApp.
+* **AI Intent Recognition:** Uses **Gemini 1.5** to understand natural language and extract dates/times.
+* **Tool-Use (Agentic AI):** The AI Agent is equipped with specific tools to:
+    * `Get User Appointment`
+    * `Add Appointment`
+    * `Reschedule/Cancel Appointments`
+    * `Read Doctor Configuration`
+
+### 📢 2. Proactive Patient Engagement
+* **Automated Reminders:** A scheduled trigger checks the database and sends personalized WhatsApp reminders to patients.
+* **Instant Sync:** Detects manual changes in Google Sheets and triggers immediate Gmail notifications.
+
+## 📊 Visual Workflow Architecture
+![Clinic Automation Workflow](./workflow_screenshot.png)
 
 ## 🛠️ Tech Stack
-* **Automation Tool:** n8n.io
-* **Logic:** Node-based workflow, Webhooks, JSON processing.
-* **Integrations:** Google Calendar, Gmail, [Add your specific tools here].
-
-## ⚙️ How to Use
-1. Install **n8n** (Cloud or Self-hosted).
-2. Create a new workflow and select **Import from File**.
-3. Upload the `Clinic_Automation.json` file found in this repository.
-4. Configure your API credentials for the connected nodes.
+* **Orchestration:** n8n.io
+* **LLM:** Google Gemini (Generative AI)
+* **Channels:** WhatsApp Business API, Gmail
+* **Database:** Google Sheets (CRM)
+* **Logic:** Node-based Agentic Workflow with Memory
 
 ---
-## 🎥 Logic Demo
-👉 **[View Clinic Automation Demo](https://karimmontaser0.github.io/My_Portfolio/)**
+## 🎥 Project Demo
+Check out the full system in action on my [Personal Portfolio](https://karimmontaser0.github.io/My_Portfolio/).
